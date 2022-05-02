@@ -6,6 +6,7 @@ from tkinter import *
 
 from genericClass import generic
 
+
 """
 server = 'SERVINTRA01\SQLINTRA'
 database = 'VVTecnics_TEST'
