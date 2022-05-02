@@ -4,20 +4,21 @@ from tkinter import *
 server = 'SERVINTRA01\SQLINTRA'
 database = 'VVTecnics_TEST'
 username = 'sa'
-password = 'vvp.20'
+password = '********'
 
 """ server = 'VICENSSBONE2\VICENSVIVES'
 database = 'VVEDITORIAL_JORGE'
 username = 'sa'
-password = 'SAPB1Admin' """
+password = '********' """
+
 
 gen = generic
 cnxn = gen.genericManage.conSQL(server, database, username, password)
 cursor = cnxn.cursor()
 fecha = ""
 # Sample select query
-sql = "SELECT * from facturas" 
-"""sql = "select  top 1 * from oinv order by DocEntry desc"""
+"""  sql = "SELECT * from facturas" """
+sql = "select  top 1 * from oinv order by DocEntry desc"
 cursor.execute(sql)
 
 
