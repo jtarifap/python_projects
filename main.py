@@ -5,7 +5,7 @@ from multiprocessing.spawn import import_main_path """
 from tkinter import *
 
 from genericClass import generic
-
+from dbaccess import db
 
 """
 server = 'SERVINTRA01\SQLINTRA'
@@ -15,10 +15,12 @@ password = '*****'
 cnxn = pyodbc.connect('DRIVER={SQL Server};SERVER='+server +
                       ';DATABASE='+database+';UID='+username+';PWD=' + password)
 """""
-server = 'SERVINTRA01\SQLINTRA'
-database = 'VVTecnics_TEST'
-username = 'sa'
-password = '***'
+#username = 'sa'
+#password = '***'
+server = db.server
+database = db.dbname
+username = db.us
+password = db.passw
 
 gen = generic.genericManage
 

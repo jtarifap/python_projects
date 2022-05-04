@@ -11,5 +11,8 @@ class genericManage:
         return cnxn
 
     def select(sql, campo):
+        #Hace el select y retorna el campo elegido
         return campo
+
+        
         
